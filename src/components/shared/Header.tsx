@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const statements = [
   "Green Paths, Happy Farms: Sustainably Transporting Life and Livelihoods.",
@@ -54,13 +55,15 @@ const Header = () => {
     <>
       <div className="header relative flex flex-col items-center justify-start gap-24 text-white">
         <nav className="flex flex-row justify-end md:justify-evenly items-start md:gap-72 md:py-16 z-10">
-          <div className="absolute top-7 right-5 md:relative md:top-0 md:right-0 z-10">
+          <div className="absolute top-7 left-5 md:relative md:top-0 md:right-0 z-10">
             <span
               className="cursor-pointer md:hidden"
               onClick={() => {
                 setNavToggle((prev) => !prev);
               }}
-            ></span>
+            >
+              <GiHamburgerMenu />
+            </span>
             <ul
               className={`md:flex flex-col md:flex-row gap-4 md:gap-10 my-3 md:my-0 ${
                 navToggle ? "flex" : "hidden"
@@ -86,7 +89,7 @@ const Header = () => {
             </ul>
           </div>
           <img
-            className="w-32 pt-5 md:pt-0 border-4 border-primaryDarkHovered rounded-full"
+            className="w-20 md:w-32 mt-2 border-4 border-primaryDarkHovered rounded-full"
             src={require("../../assets/logo2.jpg")}
             alt="logo"
           />
