@@ -5,27 +5,89 @@ type Props = {};
 
 const Services = (props: Props) => {
   return (
-    <section className="pragraph__difficulty flex flex-col gap-5 px-3 py-14 md:py-32 gap-5 bg-lightGray justify-evenly items-center xs:flex-row">
-      <Fade bottom>
-        <img
-          className="xs:w-2/5 md:h-72 object-cover rounded-2xl"
-          src={require("../../assets/farm3.png")}
-          alt="Green yard"
-        />
-        <div className="xs:w-2/5">
-          <h2 className="text-xl pb-3">Our Services</h2>
-          <p className="font-bold">
-            Our company provides comprehensive livestock logistics throughout
-            the United Arab Emirates. We deliver safe and efficient animal
-            transportation, including the transfer of essential animal materials
-            and nutrients. Our team ensures smooth and stress-free livestock
-            relocation within farms and facilities, adhering to the highest
-            standards of animal welfare. We are committed to your livestock's
-            well-being and strive to exceed your service expectations.
-          </p>
-        </div>
-      </Fade>
-    </section>
+    <>
+      <section className="pragraph__difficulty px-3 py-14 md:py-32 bg-lightGray">
+        <Fade bottom>
+          <h2 className="text-center text-xl font-bold md:text-3xl font-bold text-primaryDark pb-10">
+            Our Services
+          </h2>
+          <div className="md:p-10 flex flex-col md:grid grid-cols-3 grid-flow-row justify-center gap-10">
+            <div className="service-card1 h-60 sm:w-96 rounded-2xl flex flex-col justify-end overflow-hidden">
+              <div className="service-card__content1 text-white">
+                <h1 className="text-xl font-bold md:text-3xl pb-3">
+                  Services 1
+                </h1>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  voluptatem?
+                </p>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------- */}
+            <div className="service-card2 h-60 sm:w-96 rounded-2xl flex flex-col justify-end overflow-hidden">
+              <div className="service-card__content2 text-white">
+                <h1 className="text-xl font-bold md:text-3xl pb-3">
+                  Services 2
+                </h1>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  voluptatem?
+                </p>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------- */}
+            <div className="service-card3 h-60 sm:w-96 rounded-2xl flex flex-col justify-end overflow-hidden">
+              <div className="service-card__content3 text-white">
+                <h1 className="text-xl font-bold md:text-3xl pb-3">
+                  Services 3
+                </h1>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  voluptatem?
+                </p>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------- */}
+            <div className="service-card4 h-60 sm:w-96 rounded-2xl flex flex-col justify-end overflow-hidden">
+              <div className="service-card__content4 text-white">
+                <h1 className="text-xl font-bold md:text-3xl pb-3">
+                  Services 4
+                </h1>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  voluptatem?
+                </p>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------- */}
+            <div className="service-card5 h-60 sm:w-96 rounded-2xl flex flex-col justify-end overflow-hidden">
+              <div className="service-card__content5 text-white">
+                <h1 className="text-xl font-bold md:text-3xl pb-3">
+                  Services 5
+                </h1>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  voluptatem?
+                </p>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------- */}
+            <div className="service-card6 h-60 sm:w-96 rounded-2xl flex flex-col justify-end overflow-hidden">
+              <div className="service-card__content6 text-white">
+                <h1 className="text-xl font-bold md:text-3xl pb-3">
+                  Services 6
+                </h1>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  voluptatem?
+                </p>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------- */}
+          </div>
+        </Fade>
+      </section>
+    </>
   );
 };
 

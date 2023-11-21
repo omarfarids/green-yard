@@ -7,37 +7,50 @@ import {
   BsYoutube,
   BsPinterest,
 } from "react-icons/bs";
+import { IoMdMail } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
     <>
-      <div className="bg-lightGray flex justify-evenly flex-col md:flex-row items-center">
-        <div className="px-3 md:w-2/5 md:p-10">
+      <div className="bg-white border-t border-t-lightGray flex items-center md:items-start justify-between flex-col md:flex-row md:p-10 gap-10">
+        <div className="flex flex-col w-1/4 items-center md:items-start">
           <img
             className="w-16 border-2 border-black my-5 rounded-full"
             src={require("../../assets/logo2.jpg")}
             alt=""
           />
-          <div className="flex flex-row gap-7 justify-between flex-wrap">
-            <p className="text-lg font-medium hover:cursor-pointer">
-              Product by Green yard
-            </p>
-            <p className="text-lg font-medium hover:cursor-pointer">
-              Get Early Access
-            </p>
-            <p className="text-lg font-medium hover:cursor-pointer">
-              Dubai, UAE
-            </p>
-            <p className="text-lg font-medium hover:cursor-pointer">
-              Provide Feedback
-            </p>
-          </div>
+          <p className="text-sm font-medium hover:cursor-pointer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+            similique? At tempore quo quia qui.
+          </p>
         </div>
-        <div className="pt-3 md:w-2/5">
-          <p>Connect with Us</p>
-          <div className=" flex flex-row gap-5 py-5">
+        <div className="flex flex-col md:w-1/5 items-center md:items-start">
+          <h1 className="text-xl font-semibold">Contact us</h1>
+          <p className="text-lg font-medium hover:cursor-pointer">
+            <IoMdMail className="inline-block" /> test@test.com
+          </p>
+          <p className="text-lg font-medium hover:cursor-pointer">
+            <FaPhoneAlt className="inline-block" /> 123456789
+          </p>
+          <p className="text-lg font-medium hover:cursor-pointer">
+            <FaLocationDot className="inline-block" /> Dubai ,UAE
+          </p>
+        </div>
+        <div className="flex flex-col md:w-1/5 items-center md:items-start">
+          <p className="text-lg font-medium hover:cursor-pointer">Home</p>
+          <p className="text-lg font-medium hover:cursor-pointer">
+            Mission & Vision
+          </p>
+          <p className="text-lg font-medium hover:cursor-pointer">About us</p>
+          <p className="text-lg font-medium hover:cursor-pointer">Contact us</p>
+        </div>
+        <div className="md:w-1/5 items-center md:items-start">
+          <h1 className="text-xl font-semibold">Follow us</h1>
+          <div className=" flex flex-row gap-2 py-3">
             <BsFacebook className="text-blue hover:cursor-pointer" />
             <BsTwitter className="text-DodgerBlue hover:cursor-pointer" />
             <BsInstagram className="text-yellowDark hover:cursor-pointer" />
@@ -47,9 +60,9 @@ const Footer = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="bg-black flex flex-col md:flex-row justify-between py-5 px-10">
-        <p className="text-white">copyright &#169; 2023 Green yard</p>
-        <p className="text-white">Terms of Service</p>
+      <div className="bg-lightGray flex flex-col md:flex-row justify-between py-2 px-10">
+        <p>copyright &#169; 2023 Green yard</p>
+        <p>Terms of Service</p>
       </div>
     </>
   );
