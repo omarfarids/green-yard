@@ -8,7 +8,7 @@ const Mission = (props: Props) => {
     <section className="flex flex-col gap-5 px-3 py-14 md:py-32 gap-5 justify-evenly items-center xs:flex-row">
       <Fade bottom>
         <div className="xs:w-3/5 mx-1">
-          <h2 className="text-xl pb-1 mb-6 mx-auto text-center border-gray border-b-2 border-dashed w-36">
+          <h2 className="text-xl pb-1 mb-6 mx-auto text-center border-gray border-b-2 border-dashed w-44">
             Our Experience
           </h2>
           <p className="font-bold text-justify">

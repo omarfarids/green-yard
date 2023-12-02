@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const statements = [
   "Green Paths, Happy Farms: Sustainably Transporting Life and Livelihoods.",
-  "Moving Agriculture Forward.",
+  "Making Connections Delivering Results.",
 ];
 
 const NAV_ITEMS = [
@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="sticky top-0 flex flex-row justify-end md:justify-between items-center px-10 z-20 bg-primaryDark w-full">
+      <nav className="relative flex flex-row justify-end md:justify-between items-center px-10 z-20 bg-primaryDark w-full">
         <img
           className="w-20 my-2 border-4 border-primaryDarkHovered rounded-full"
           src={require("../../assets/logo2.jpg")}
@@ -100,7 +100,7 @@ const Header = () => {
           <FaInstagram className="text-white hover:cursor-pointer border border-white rounded-full w-10 h-10 p-2" />
         </div>
       </nav>
-      <div className="header pt-20 flex flex-col items-center justify-start gap-24 text-white">
+      <div className="header pt-20 md:pt-40 flex flex-col items-center justify-start gap-24 text-white">
         <p
           className={`md:h-40 font-semibold text-center text-3xl p-20 w-3/4 relative transition-all duration-300 ease-in-out ${
             transitioning ? "opacity-0" : "opacity-100"
@@ -108,12 +108,6 @@ const Header = () => {
         >
           {headerState}
         </p>
-        <Link
-          to={"/about-us"}
-          className="bg-primaryDark z-10 px-5 py-3 text-lg font-semibold rounded-sm"
-        >
-          Learn more
-        </Link>
       </div>
     </>
   );
