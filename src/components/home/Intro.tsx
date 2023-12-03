@@ -8,18 +8,17 @@ const Intro = () => {
         <Fade bottom>
           <div className="md:w-2/5">
             <h1 className="text-xl md:text-3xl font-bold text-primaryDark pb-10">
-              Welcome to Green Yard, Your Partner in Sustainable Agriculture
-              Transport!
+              Welcome to Allo Promo, Your Partner in in digital innovations
+              across existing and emerging marketing communication!
             </h1>
             <p className="font-bold">
-              At Green Yard, we redefine farm animal transportation with a focus
-              on sustainability and animal well-being. Our eco-friendly fleet
-              ensures timely deliveries while minimizing our environmental
-              impact. We prioritize the comfort and safety of every animal,
-              combining industry expertise with a commitment to green energy.
-              Join us in creating a greener future for agriculture with reliable
-              and conscientious transportation. Welcome to a new era of
-              sustainable farming at Green Yard.
+              We are a group of unstoppable thinkers and doers—a team connected
+              by our culture. We have created a conducive space that we designed
+              to accommodate innovative and wild ideas. Here, there are no
+              unnecessary boundaries, hierarchies, and pointless meetings. Allo
+              Promo started as a dream, as most companies do. It began as an
+              entity we dreamt together over our pint-sized successes and
+              failures over a decade ago!
             </p>
           </div>
           <img
@@ -31,8 +30,8 @@ const Intro = () => {
       </section>
       <div className="intro-quote w-full h-72 flex justify-center items-center relative z-5">
         <p className="text-white text-lg md:text-3xl font-medium md:font-bold relative z-10 w-4/5 text-center">
-          Organic Ethanol Fuel, Biodiesel, Biochar & Biocoal are at the Center
-          of Our Activities!
+          We don't just have mission and vision statements; we are on a mission,
+          and each of us knows our vision.
         </p>
       </div>
     </>

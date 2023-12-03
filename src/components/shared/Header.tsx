@@ -5,7 +5,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const statements = [
-  "Green Paths, Happy Farms: Sustainably Transporting Life and Livelihoods.",
+  "Building Bridges, Crafting Solutions, Achieving Excellence: Where Connections Meet Results.",
   "Making Connections Delivering Results.",
 ];
 

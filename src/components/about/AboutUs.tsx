@@ -9,19 +9,18 @@ const Mission = (props: Props) => {
       <Fade bottom>
         <div className="xs:w-3/5 mx-1">
           <h2 className="text-xl pb-1 mb-6 mx-auto text-center border-gray border-b-2 border-dashed w-44">
-            Our Experience
+            WHO WE ARE
           </h2>
           <p className="font-bold text-justify">
-            Our mission is to revolutionize the agricultural sector by
-            pioneering the use of electric vehicles for livestock
-            transportation. We aim to create a healthier and more efficient
-            environment for both individuals and animals. By harnessing the
-            power of sustainable technology, we seek to reduce carbon emissions
-            and contribute to a greener future, while ensuring the utmost care
-            for the animals in transit. Our commitment extends beyond mere
-            transportation - we strive to drive innovation, promote animal
-            welfare, and foster a sustainable future for the agricultural
-            industry.
+            At Allo Promo, we are aware you're the type of one who needs to
+            implement palmy digital selling campaigns. Thus, for us to meet your
+            standard, you would like the optimum choice of promoting channels,
+            correct metrics, and a nonstop flow of concepts that improve the
+            performance your business. ​ We can help you improve every aspect of
+            your digital marketing, local advertising, and content creation to
+            guarantee a strict path towards a drastic increase in leads and
+            sales, all while collaborating in a way that optimizes your time
+            investment with the main goal of maximizing results.
           </p>
         </div>
       </Fade>

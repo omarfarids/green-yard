@@ -12,13 +12,16 @@ const Vission = (props: Props) => {
             Vision
           </h2>
           <p className="font-bold text-lg text-justify">
-            Our company provides comprehensive livestock logistics throughout
-            the United Arab Emirates. We deliver safe and efficient animal
-            transportation, including the transfer of essential animal materials
-            and nutrients. Our team ensures smooth and stress-free livestock
-            relocation within farms and facilities, adhering to the highest
-            standards of animal welfare. We are committed to your livestock's
-            well-being and strive to exceed your service expectations.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            doloremque neque impedit consequuntur, nemo cum ratione, deserunt
+            aut necessitatibus fugiat natus veniam dolores reprehenderit officia
+            esse, tenetur doloribus cupiditate libero rerum provident
+            accusantium aspernatur similique hic! Totam ab animi eveniet impedit
+            eaque quo accusamus vitae eum molestias dolores quas maiores quae
+            odit quos officia aut modi, doloribus in? Id totam quo nam illum
+            laudantium molestiae accusantium reprehenderit quod quam quis,
+            accusamus, earum adipisci cupiditate dolorum facilis iure quasi.
+            Minima, eius.
           </p>
         </div>
       </Fade>

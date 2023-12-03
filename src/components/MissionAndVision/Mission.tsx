@@ -12,16 +12,16 @@ const Mission = (props: Props) => {
             Mission
           </h2>
           <p className="font-bold text-justify">
-            Our mission is to revolutionize the agricultural sector by
-            pioneering the use of electric vehicles for livestock
-            transportation. We aim to create a healthier and more efficient
-            environment for both individuals and animals. By harnessing the
-            power of sustainable technology, we seek to reduce carbon emissions
-            and contribute to a greener future, while ensuring the utmost care
-            for the animals in transit. Our commitment extends beyond mere
-            transportation - we strive to drive innovation, promote animal
-            welfare, and foster a sustainable future for the agricultural
-            industry.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, pariatur, quibusdam mollitia esse quod nobis iure ab
+            nostrum perferendis saepe voluptates? Fuga iure, consectetur esse
+            animi assumenda numquam aut ut a ea quasi earum repellat molestias?
+            Natus unde labore, incidunt itaque repellendus dignissimos minima
+            quis quidem? Nihil molestias tenetur suscipit repellat praesentium.
+            Quod saepe autem accusantium quam, ut in tenetur sit soluta! Quas
+            accusantium corporis provident debitis accusamus aperiam ducimus,
+            minus assumenda, consectetur aliquid qui reprehenderit corrupti quos
+            vel? Distinctio?
           </p>
         </div>
       </Fade>
