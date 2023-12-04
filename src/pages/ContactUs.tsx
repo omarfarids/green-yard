@@ -15,14 +15,19 @@ const ContactUs = (props: Props) => {
     <section className="flex flex-col gap-5 px-3 py-14 md:py-32 gap-5 justify-evenly items-center xs:flex-row">
       {isSent ? (
         <Fade bottom>
-          <div className="w-full md:w-3/5 mx-1 bg-lightGray py-10 pb-20 rounded-2xl shadow-lg text-green">
-            <div className={"text-green"}>
-              <span className="border rounded-full w-20 h-20 flex justify-center items-center">
+          <div className="w-full md:w-3/5 mx-1 bg-lightGray py-10 pb-20 rounded-2xl shadow-lg flex flex-col justify-center items-center">
+            <div className={"flex flex-row gap-2 text-primary "}>
+              <span className="border rounded-full w-5 h-5 flex justify-center items-center">
                 <MdDone />
               </span>{" "}
               Your Message Sent Successfully!
             </div>
-            <button onClick={handleSend}>Send another message!</button>
+            <button
+              className="bg-primaryDark text-white p-2 rounded-md mt-10"
+              onClick={handleSend}
+            >
+              Send another message!
+            </button>
           </div>
         </Fade>
       ) : (
@@ -40,7 +45,12 @@ const ContactUs = (props: Props) => {
                 placeholder="Enter your Message"
                 className="h-32"
               />
-              <button onClick={handleSend}>Send</button>
+              <button
+                className="bg-primaryDark text-white py-2"
+                onClick={handleSend}
+              >
+                Send
+              </button>
             </div>
           </div>
         </Fade>

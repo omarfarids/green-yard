@@ -4,8 +4,9 @@ import { FaEnvira } from "react-icons/fa";
 import { GiPlantWatering } from "react-icons/gi";
 import { GiFruitTree } from "react-icons/gi";
 import { FaRecycle } from "react-icons/fa";
-import { GiFarmTractor } from "react-icons/gi";
-import { FaCow } from "react-icons/fa6";
+import { MdLaptopChromebook } from "react-icons/md";
+
+import { IoBookOutline } from "react-icons/io5";
 
 type Props = {};
 
@@ -19,38 +20,38 @@ const MainPoints = (props: Props) => {
         <div className="md:flex md:flex-row md:justify-center gap-10">
           <div className="md:p-10 flex flex-col md:grid grid-rows-3 grid-flow-col justify-center gap-20">
             <InfoSection
-              title="Sustainable Transport Solutions"
+              title="Lead Generation Mastery."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={FaEnvira}
             />
             <InfoSection
-              title="Animal Welfare Priority."
+              title="Local Advertising Dominance."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={GiPlantWatering}
             />
             <InfoSection
-              title="Green Energy Innovation."
+              title="Content Creation Innovation."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={GiFruitTree}
             />
             <InfoSection
-              title="Expertise in Farm Logistics."
+              title="Performance Metrics Precision."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={FaRecycle}
             />
             <InfoSection
-              title="Reliability and Punctuality."
+              title="Time-Optimized Collaboration."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
-              icon={GiFarmTractor}
+              icon={MdLaptopChromebook}
             />
             <InfoSection
-              title="Environmental Impact Reduction."
+              title="Multichannel Marketing Excellence."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
-              icon={FaCow}
+              icon={IoBookOutline}
             />
           </div>
           <img
-            className="hidden md:block md:w-60 rounded-2xl"
+            className="hidden md:block md:w-60 rounded-2xl object-cover"
             src={require("../../assets/farm2.jpg")}
             alt="Green yard"
           />

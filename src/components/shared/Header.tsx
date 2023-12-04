@@ -28,6 +28,7 @@ const Header = () => {
   const [headerState, setHeaderState] = useState(statements[statementToggler]);
   const [navToggle, setNavToggle] = useState(false);
   const navigate = useNavigate();
+  const videoRef: any = useRef(null);
 
   // ------------ functions ------------
 
@@ -38,6 +39,16 @@ const Header = () => {
       setTransitioning(false);
     }, 300);
   };
+
+  const startVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  useEffect(() => {
+    startVideo();
+  }, []);
 
   // ------------ side effects ------------
 
@@ -55,10 +66,10 @@ const Header = () => {
 
   return (
     <>
-      <nav className="relative flex flex-row justify-end md:justify-between items-center px-10 z-20 bg-primaryDark w-full">
+      <nav className="relative flex flex-row justify-end md:justify-between items-center px-10 z-20 bg-primaryDark w-full shadow-lg">
         <img
-          className="w-20 my-2 border-4 border-primaryDarkHovered rounded-full"
-          src={require("../../assets/logo2.jpg")}
+          className="w-40 my-5"
+          src={require("../../assets/logo.webp")}
           alt="logo"
         />
         <div className="absolute top-7 left-5 md:relative md:top-0 md:right-0 z-5">
@@ -101,8 +112,14 @@ const Header = () => {
         </div>
       </nav>
       <div className="header pt-20 md:pt-40 flex flex-col items-center justify-start gap-24 text-white">
+        <video style={{ height: "100vh" }} ref={videoRef} loop muted>
+          <source
+            src={require("../../assets/background.mp4")}
+            type="video/mp4"
+          />
+        </video>
         <p
-          className={`md:h-40 font-semibold text-center text-3xl p-20 w-3/4 relative transition-all duration-300 ease-in-out ${
+          className={`md:h-40 font-semibold text-center z-20 text-3xl p-20 w-3/4 relative transition-all duration-300 ease-in-out ${
             transitioning ? "opacity-0" : "opacity-100"
           }`}
         >

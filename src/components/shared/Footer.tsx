@@ -17,10 +17,10 @@ const Footer = (props: Props) => {
   return (
     <>
       <div className="bg-white border-t border-t-lightGray flex items-center md:items-start justify-between flex-col md:flex-row md:p-10 gap-10">
-        <div className="flex flex-col w-1/4 items-center md:items-start">
+        <div className="flex flex-col w-4/5 py-2 md:w-1/4 items-center md:items-start">
           <img
-            className="w-16 border-2 border-black my-5 rounded-full"
-            src={require("../../assets/logo2.jpg")}
+            className="w-40 mb-5"
+            src={require("../../assets/logo.webp")}
             alt=""
           />
           <p className="text-sm font-medium hover:cursor-pointer">
@@ -37,7 +37,7 @@ const Footer = (props: Props) => {
             <FaPhoneAlt className="inline-block" /> 123456789
           </p>
           <p className="text-lg font-medium hover:cursor-pointer">
-            <FaLocationDot className="inline-block" /> Dubai ,UAE
+            <FaLocationDot className="inline-block" /> Canada
           </p>
         </div>
         <div className="flex flex-col md:w-1/5 items-center md:items-start">
@@ -61,7 +61,7 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <div className="bg-lightGray flex flex-col md:flex-row justify-between py-2 px-10">
-        <p>copyright &#169; 2023 Green yard</p>
+        <p>copyright &#169; 2023 Allo Promo</p>
         <p>Terms of Service</p>
       </div>
     </>

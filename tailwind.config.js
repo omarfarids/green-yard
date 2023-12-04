@@ -26,7 +26,7 @@ module.exports = {
         lightRed: "#ff000014", // danger
         Orange: "#EBAF53",
         // color for data in table
-        blue: "#0055CC",
+        blue: "#0e0a2a",
         lightBlue: "#E9F2FF",
         yellowDark: "#974F0C",
         lightYellow: "#FFF7D6",

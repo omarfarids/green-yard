@@ -23,8 +23,8 @@ const Intro = () => {
           </div>
           <img
             className="xs:w-2/5 md:w-96 rounded-2xl"
-            src={require("../../assets/farm.jpg")}
-            alt="Green yard"
+            src={require("../../assets/intro.png")}
+            alt=""
           />
         </Fade>
       </section>
