@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import Zoom from "react-reveal/Zoom";
 
 const statements = [
   "Building Bridges, Crafting Solutions, Achieving Excellence: Where Connections Meet Results.",
@@ -111,21 +112,23 @@ const Header = () => {
           <FaInstagram className="text-white hover:cursor-pointer border border-white rounded-full w-10 h-10 p-2" />
         </div>
       </nav>
-      <div className="header pt-20 md:pt-40 flex flex-col items-center justify-start gap-24 text-white">
-        <video style={{ height: "100vh" }} ref={videoRef} loop muted>
-          <source
-            src={require("../../assets/background.mp4")}
-            type="video/mp4"
-          />
-        </video>
-        <p
-          className={`md:h-40 font-semibold text-center z-20 text-3xl p-20 w-3/4 relative transition-all duration-300 ease-in-out ${
-            transitioning ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {headerState}
-        </p>
-      </div>
+      <Zoom>
+        <div className="header pt-20 md:pt-40 flex flex-col items-center justify-start gap-24 text-white">
+          <video style={{ height: "100vh" }} ref={videoRef} loop muted>
+            <source
+              src={require("../../assets/background.mp4")}
+              type="video/mp4"
+            />
+          </video>
+          <p
+            className={`md:h-40 font-semibold text-center z-20 text-3xl p-20 w-3/4 relative transition-all duration-300 ease-in-out ${
+              transitioning ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            {headerState}
+          </p>
+        </div>
+      </Zoom>
     </>
   );
 };

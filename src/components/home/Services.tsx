@@ -1,12 +1,13 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import AboutCounter from "./AboutCounter";
 
 type Props = {};
 
 const Services = (props: Props) => {
   return (
     <>
-      <section className="pragraph__difficulty px-3 py-14 md:py-32 bg-lightGray">
+      <section className="pragraph__difficulty px-3 pt-14 md:pt-32 bg-lightGray">
         <Fade bottom>
           <h2 className="text-center text-xl font-bold md:text-3xl font-bold text-primaryDark pb-10">
             Our Services
@@ -85,6 +86,9 @@ const Services = (props: Props) => {
             </div>
             {/* ---------------------------------------------------------- */}
           </div>
+        </Fade>
+        <Fade bottom>
+          <AboutCounter />
         </Fade>
       </section>
     </>

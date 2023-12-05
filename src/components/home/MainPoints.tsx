@@ -13,50 +13,64 @@ type Props = {};
 const MainPoints = (props: Props) => {
   return (
     <section className="px-3 py-14 md:py-32">
-      <Fade bottom>
+      <Fade top>
         <h2 className="text-center text-xl md:text-3xl font-bold text-primaryDark pb-10">
           Our Main Goals
         </h2>
-        <div className="md:flex md:flex-row md:justify-center gap-10">
-          <div className="md:p-10 flex flex-col md:grid grid-rows-3 grid-flow-col justify-center gap-20">
+      </Fade>
+      <div className="md:flex md:flex-row md:justify-center gap-10">
+        <div className="md:p-10 flex flex-col md:grid grid-rows-3 grid-flow-col justify-center gap-20">
+          <Fade left>
             <InfoSection
               title="Lead Generation Mastery."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={FaEnvira}
             />
+          </Fade>
+          <Fade left>
             <InfoSection
               title="Local Advertising Dominance."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={GiPlantWatering}
             />
+          </Fade>
+          <Fade left>
             <InfoSection
               title="Content Creation Innovation."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={GiFruitTree}
             />
+          </Fade>
+          <Fade right>
             <InfoSection
               title="Performance Metrics Precision."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={FaRecycle}
             />
+          </Fade>
+          <Fade right>
             <InfoSection
               title="Time-Optimized Collaboration."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={MdLaptopChromebook}
             />
+          </Fade>
+          <Fade right>
             <InfoSection
               title="Multichannel Marketing Excellence."
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, atque?"
               icon={IoBookOutline}
             />
-          </div>
+          </Fade>
+        </div>
+        <Fade>
           <img
             className="hidden md:block md:w-60 rounded-2xl object-cover"
             src={require("../../assets/farm2.jpg")}
             alt="Green yard"
           />
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </section>
   );
 };
