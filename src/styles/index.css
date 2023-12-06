@@ -268,3 +268,45 @@ video {
   padding: 0 20px;
 }
 /* ---------------------------------------------- */
+
+@keyframes moving-tap {
+  0% {
+    right: -110vw;
+  }
+  10% {
+    right: -80vw;
+  }
+  20% {
+    right: -60vw;
+  }
+  30% {
+    right: -40vw;
+  }
+  40% {
+    right: -20vw;
+  }
+  50% {
+    right: 0;
+  }
+  60% {
+    right: 20vw;
+  }
+  70% {
+    right: 40vw;
+  }
+  80% {
+    right: 60vw;
+  }
+  90% {
+    right: 80vw;
+  }
+  100% {
+    right: 100vw;
+  }
+}
+
+.news-tap {
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moving-tap 15s linear infinite;
+}
